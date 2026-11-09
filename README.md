@@ -19,20 +19,19 @@ Install it (instructions below), open a folder, and run **`/voiceprint-start`**.
 
 - **It learns you from what you reject, not just what you've written.** The Cheese Gauntlet (your disgust as signal) is the part no other voice tool does.
 - **It works even if you have no corpus.** Most tools need 10+ samples to get good. VoicePrint's interview + gauntlet produce real signal from zero, and tell you honestly when the result is still outline-grade.
-- **It proves it's converging instead of promising magic.** No "80% on the first pass." `/voiceprint-proof` measures your draft against a generic-AI baseline and your own writing, locally, and shows whether it actually moved toward you.
-- **Local, free, no account, no upload, no API key.** Your writing never leaves your machine. Nothing to connect, nothing to trust with your data.
+- **It proves it's converging instead of promising magic.** No "80% on the first pass." `/voiceprint-proof` measures your draft against a generic-AI baseline and your own writing, with a small script that runs in your session, and shows whether it actually moved toward you.
+- **A free plugin for Claude Pro and up. It uploads nothing.** No connectors, no API key, no extra account. Everything you paste is saved as plain files in a `voiceprint/` folder in your workspace. Your writing does go to Claude itself, the same as anything you type to Claude (see [Local and private](#local-and-private)).
 
 ## Installation
 
-VoicePrint installs from this GitHub repo as a plugin marketplace. The same source works in both Claude Cowork and Claude Code.
+VoicePrint installs from this GitHub repo as a plugin marketplace. The same source works in both Claude Cowork and Claude Code. You need a paid Claude plan (Pro, Max, Ultra, Team or Enterprise); plugins aren't available on the free plan.
 
 ### Claude Cowork (recommended for non-developers)
 
-1. Open **Customize** (bottom-left of Cowork).
-2. Go to **Browse plugins** → **Personal** → **+**.
-3. Select **Add marketplace from GitHub**.
-4. Enter: `seanwinslow28/voiceprint`
-5. Install **VoicePrint** when it appears.
+1. Open **Customize** in the Cowork sidebar and select **Plugins**.
+2. Click **Add**, then **Add marketplace**.
+3. Enter `seanwinslow28/voiceprint` (the full `https://github.com/seanwinslow28/voiceprint` link works too).
+4. Find **VoicePrint** on the **Discover** tab and install it.
 
 <!-- Sean: drop a short screen recording of the Cowork install here, at .docs/images/cowork-install.gif -->
 ![Installing VoicePrint in Claude Cowork](.docs/images/cowork-install.gif)
@@ -108,9 +107,11 @@ This is **not** a one-shot. One session gets you a sharper outline. The tenth ge
 
 ## Local and private
 
-Everything you paste (old writing, reactions, transcripts) stays in your workspace as plain files. Nothing is uploaded anywhere by the plugin. That guarantee is the whole reason "paste me your old writing" is a safe ask.
+Everything you paste (old writing, reactions, transcripts) stays in your workspace as plain files, in a `voiceprint/` folder. Nothing is uploaded anywhere by the plugin: it has no connectors, makes no network calls, and sends your writing to no outside service. That guarantee is the whole reason "paste me your old writing" is a reasonable ask.
 
-No API key required. VoicePrint runs entirely in your own Claude session (Cowork or Claude Code), on your own subscription.
+What the plugin can't change is where Claude runs. Your writing goes where everything you type to Claude goes: to Claude, on Anthropic's servers, under your Claude account's privacy settings. In Cowork, sessions run in Anthropic's cloud by default and your files are saved to your Claude account. If you wouldn't paste something into Claude, don't paste it into VoicePrint.
+
+No API key required. VoicePrint runs in your own Claude session (Cowork or Claude Code), on your own paid Claude plan.
 
 ## Components
 
