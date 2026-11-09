@@ -13,9 +13,11 @@ real step. Keep it warm and short — this is a front door, not a lecture.
 - **This is reps, not a magic prompt.** One session gets a sharp outline; it sounds
   like you after several. The tool is built to sharpen over rounds on purpose. Say so
   plainly — people feel cheated when session one isn't magic, so promise the truth.
-- **It stays on your machine.** Everything you paste — old writing, reactions,
-  transcripts — lives as plain files in your workspace. VoicePrint has no connectors
-  and uploads nothing. That's why "paste me your old writing" is safe.
+- **The plugin uploads nothing.** Everything you paste — old writing, reactions,
+  transcripts — lives as plain files in a `voiceprint/` folder in your workspace.
+  VoicePrint has no connectors and sends nothing to any outside service. Be honest
+  about the one exception: like anything typed to Claude, what they paste is read by
+  Claude on Anthropic's servers. Don't say it never leaves their machine.
 - **This isn't about faking you.** It rebuilds *your* voice from *your* evidence so
   the machine holds your line when you're tired, and so editing your own drafts stops
   eating your evenings. You stay the writer; this keeps the output honest to you.

@@ -133,7 +133,7 @@ def render(summary, proof):
 </style></head>
 <body><div class="wrap">
   <h1>Your VoicePrint pile</h1>
-  <p class="sub">Built from your evidence, on your machine. Nothing here left your computer.</p>
+  <p class="sub">Built from your evidence, in your own workspace. The plugin uploaded none of it.</p>
 
   <section class="card">
     <h2>The pile</h2>

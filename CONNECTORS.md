@@ -15,10 +15,10 @@ on plain files in the reader's own workspace. It does not read from or write to
 any external service — no chat tool, no project tracker, no cloud storage, no
 database. There is nothing to connect and nothing to customize here.
 
-This is deliberate. The product's privacy guarantee ("paste me your old writing,
-it stays local") only holds if the plugin has no outbound integrations. Keep it
-that way: if a future feature seems to want a connector, prefer a local-file
-solution first.
+This is deliberate. The product's privacy guarantee ("paste me your old writing;
+the plugin sends it nowhere but Claude") only holds if the plugin has no outbound
+integrations. Keep it that way: if a future feature seems to want a connector,
+prefer a local-file solution first.
 
 | Category | Placeholder | Used? |
 |----------|-------------|-------|
